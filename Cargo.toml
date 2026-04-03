@@ -1,0 +1,15 @@
+[package]
+name = "vfs-nostd"
+version = "0.1.0"
+edition = "2021"
+authors = ["Matt Gates <matt@ridgecellrepair.com>"]
+license = "MIT OR Apache-2.0"
+description = "no_std Virtual Filesystem layer with mount table and POSIX-like API in Rust"
+repository = "https://github.com/suhteevah/vfs-nostd"
+keywords = ["vfs", "filesystem", "mount", "no_std", "bare-metal"]
+categories = ["no-std", "filesystem", "os"]
+readme = "README.md"
+
+[dependencies]
+log = { version = "0.4", default-features = false }
+spin = { version = "0.9", default-features = false, features = ["mutex", "spin_mutex"] }
